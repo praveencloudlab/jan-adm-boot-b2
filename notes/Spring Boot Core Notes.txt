@@ -1,0 +1,56 @@
+Spring Boot Core
+Spring Boot Data : Data JPA
+Spring boot Web MVC
+Spring Boot Rest API
+Spring Boot Testing
+
+
+Spring boot designed on top of Spring4
+
+Version history
+Spring Framework 6.0.3
+
+boot version
+----------------
+ boot 1x - 2014 
+      1.5
+ boot 2x - 2018 
+      2.0 - 2.3
+      2.4 - 2.5
+      2.6 - 2.7.7
+
+ boot 3x 2012 - Nov
+      3.0
+      3.1
+
+
+Software
+
+      Java SE 11
+      Eclise IDE for JAVA EE - STS plugin
+      Spring tool suite4 (STS4)
+      IntelJIdea - Ultimate Edition  
+
+   Spring boot 3x
+   --------------------
+ 	Spring Boot Core
+	Spring Boot Data : Data JPA
+	Spring boot Web MVC
+	Spring Boot Rest API
+	Spring Boot Testing  
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
