@@ -1,0 +1,8 @@
+Incase of Spring boot 3.0 and above versions,
+ Java version should be min 17
+ Spring framework version should be 6
+ Java EE version should be EE9 (jakartha)
+
+
+ 
+
