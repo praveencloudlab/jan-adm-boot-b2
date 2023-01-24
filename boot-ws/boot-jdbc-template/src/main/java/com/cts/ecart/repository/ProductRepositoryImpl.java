@@ -34,11 +34,10 @@ public class ProductRepositoryImpl {
 	 */
 	
 	
-	
+	//multiple row fetch
 	 public List<Map<String,Object>> fetchAll() {
 		 return jt.queryForList("select * from product");
 	 }
-	 
 	 
 	 // Single Row
 	 public Map<String, Object> findById(int id){

@@ -1,0 +1,23 @@
+Spring ORM (Object relational mapping)
+----------------------------------------------
+-> data jpa
+
+     1. create entity class mapping to a database table
+     2. create Repository class for DB operations
+     			-> interface JpaRepository
+
+
+     Repository interface : marker interface
+      
+     CrudRepository extends Repository :: 12
+     ListCrudRepository extends CrudRepository
+     PagingAndSortingRepository extends Repository
+     ListPagingAndSortingRepository extends PagingAndSortingRepository
+     QueryByExampleExecutor interface
+     JpaRepository extends ListCrudRepository,ListPagingAndSortingRepository,QueryByExampleExecutor
+
+
+
+
+
+
