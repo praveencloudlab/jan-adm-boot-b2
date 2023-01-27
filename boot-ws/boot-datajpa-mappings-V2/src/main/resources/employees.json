@@ -1,0 +1,32 @@
+[
+{
+ "empId":103,
+ "empName":"Kavya",
+ "salary":8475847,
+ "dept":{"deptId":12,"deptName":"HR","location":"Hyderabad"}
+},
+{
+ "empId":104,
+ "empName":"Divya",
+ "salary":83683323,
+ "dept":{"deptId":12,"deptName":"HR","location":"Hyderabad"}
+},
+{
+ "empId":105,
+ "empName":"Aarush",
+ "salary":9444754,
+ "dept":{"deptId":11}
+},
+{
+ "empId":106,
+ "empName":"Rajesh",
+ "salary":9749744,
+ "dept":{"deptId":13,"deptName":"HR","location":"Hyderabad"}
+},
+{
+ "empId":107,
+ "empName":"Priya",
+ "salary":6645354,
+ "dept":{"deptId":12,"deptName":"HR","location":"Hyderabad"}
+}
+]

@@ -10,13 +10,15 @@ Spring ORM (Object relational mapping)
      Repository interface : marker interface
       
      CrudRepository extends Repository :: 12
-     ListCrudRepository extends CrudRepository
-     PagingAndSortingRepository extends Repository
-     ListPagingAndSortingRepository extends PagingAndSortingRepository
-     QueryByExampleExecutor interface
+     ListCrudRepository extends CrudRepository :: 3
+     PagingAndSortingRepository extends Repository :: 2
+     ListPagingAndSortingRepository extends PagingAndSortingRepository :: 1
+     QueryByExampleExecutor interface :: 7
+     JpaRepository :: 12
      JpaRepository extends ListCrudRepository,ListPagingAndSortingRepository,QueryByExampleExecutor
 
-
+      35 total builtin methods
+      
 
 
 

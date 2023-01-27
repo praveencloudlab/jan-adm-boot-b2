@@ -1,0 +1,5 @@
+Given a String str = "A took interview of B"
+Expected result  in java should be like follows
+result1 = "B of interview took A"
+result2 = "B fo weivretni koot A"
+result3 = "BfoweivretnikootA"

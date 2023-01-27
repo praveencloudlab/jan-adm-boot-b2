@@ -1,0 +1,6 @@
+{
+ "empId":1007,
+ "empName":"Person4",
+ "salary":23457,
+ "dept":{"deptId":12,"deptName":"Training","location":"Delhi"}
+}

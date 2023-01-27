@@ -1,0 +1,31 @@
+
+{"deptId":11,"deptName":"HR","location":"Chennai",
+	"emps":[
+		{
+ 		"empId":103,
+ 		"empName":"Kavya",
+ 		"salary":8475847
+ 		},
+ 		{
+ 		"empId":104,
+ 		"empName":"Divya",
+ 		"salary":83683323
+ 		},
+ 		{
+ 		"empId":105,
+ 		"empName":"Aarush",
+ 		"salary":9444754
+ 		},
+ 		{
+ 		"empId":106,
+ 		"empName":"Rajesh",
+ 		"salary":9749744
+ 		},
+ 		{
+ 		"empId":107,
+ 		"empName":"Priya",
+ 		"salary":6645354
+ 		}
+
+	]
+}
