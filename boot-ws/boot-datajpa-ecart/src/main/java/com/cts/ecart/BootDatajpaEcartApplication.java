@@ -78,11 +78,17 @@ public class BootDatajpaEcartApplication {
 		 */
 		
 		
+		 //Category category = catRepo.findByCategoryTitle("Laptops");
+		// System.out.println(category);
 		
-		
-		
-		
-		
+		 //prodRepo.findByProductTitle("Sony Sound Bar").forEach(System.out::println);
+		 //prodRepo.findByProductTitleLike("%a%").forEach(System.out::println);
+		 //prodRepo.findByPriceInfoPriceGreaterThanEqual(90000).forEach(System.out::println);
+		 //prodRepo.findByPriceInfoPriceLessThanEqual(50000).forEach(System.out::println);
+		 //prodRepo.findByPriceInfoPriceBetween(100000, 200000).forEach(System.out::println);
+		 //prodRepo.filterPrice(160000).forEach(System.out::println);
+		 //prodRepo.filterPriceV1(50000).forEach(System.out::println);
+		prodRepo.filterPriceV2(50000).forEach(System.out::println);
 
 	}
 

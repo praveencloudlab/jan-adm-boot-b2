@@ -1,0 +1,41 @@
+DSL in SPring Data JPA
+==============================
+DSL in Spring Data refers to the Domain Specific Language. It is a simple, yet powerful, way to query and manipulate data using a concise and readable syntax that resembles SQL. The DSL is used with the Spring Data JPA and Spring Data MongoDB projects to create dynamic, type-safe queries that can be easily constructed from method names. This allows developers to focus on writing code that interacts with their data, rather than writing complex and error-prone SQL statements.
+
+class Product{
+	private String productName;
+	private double price;
+	....
+
+}
+
+ex:
+interface ProductRepository extend JpaRepository<Product,Integer>{
+	// DSL
+	// get, read, find, and count
+	findByProductName(String name);
+	findByPriceGreaterThanEqual(double price);
+}
+
+The predicate is the most interesting part of the method name. 
+We can use any of the following comparison operator from property to parameter:
+1) IsAfter, After, IsGreaterThan, GreaterThan
+2) IsGreaterThanEqual, GreaterThanEqual
+3) IsBefore, Before, IsLessThan, LessThan
+4) IsLessThanEqual, LessThanEqual
+5) IsBetween, Between
+6) IsNull, Null
+7) IsNotNull, NotNull
+8) Isln, In
+9) IsNotln, Notln
+10) IsStartingWith, StartingWith, StartsWith
+11) IsEndingWith, EndingWith, EndsWith
+12) IsContaining, Containing, Contains
+13) IsLike, Like
+14) IsNotLike, Notlike
+15) IsTrue, True
+16) IsFalse, False
+17) Is, Equals
+18) IsNot, Not
+
+
