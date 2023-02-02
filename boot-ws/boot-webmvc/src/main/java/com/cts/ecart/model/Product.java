@@ -3,18 +3,35 @@ package com.cts.ecart.model;
 public class Product {
 
 	private int productId;
-	private String productName;
-	private double price;
+	private String productTitle;
+	private String keywords;
 	private String description;
-	
-	private StoreInfo storeInfo;
-	
-	public StoreInfo getStoreInfo() {
-		return storeInfo;
+
+	private PriceInfo priceInfo;
+	private StockInfo stockInfo;
+
+	public String getKeywords() {
+		return keywords;
 	}
 
-	public void setStoreInfo(StoreInfo storeInfo) {
-		this.storeInfo = storeInfo;
+	public void setKeywords(String keywords) {
+		this.keywords = keywords;
+	}
+
+	public PriceInfo getPriceInfo() {
+		return priceInfo;
+	}
+
+	public void setPriceInfo(PriceInfo priceInfo) {
+		this.priceInfo = priceInfo;
+	}
+
+	public StockInfo getStockInfo() {
+		return stockInfo;
+	}
+
+	public void setStockInfo(StockInfo stockInfo) {
+		this.stockInfo = stockInfo;
 	}
 
 	public int getProductId() {
@@ -25,20 +42,12 @@ public class Product {
 		this.productId = productId;
 	}
 
-	public String getProductName() {
-		return productName;
+	public String getProductTitle() {
+		return productTitle;
 	}
 
-	public void setProductName(String productName) {
-		this.productName = productName;
-	}
-
-	public double getPrice() {
-		return price;
-	}
-
-	public void setPrice(double price) {
-		this.price = price;
+	public void setProductTitle(String productTitle) {
+		this.productTitle = productTitle;
 	}
 
 	public String getDescription() {
@@ -51,10 +60,8 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Product [productId=" + productId + ", productName=" + productName + ", price=" + price
-				+ ", description=" + description + ", storeInfo=" + storeInfo + "]";
+		return "Product [productId=" + productId + ", productTitle=" + productTitle + ", keywords=" + keywords
+				+ ", description=" + description + ", priceInfo=" + priceInfo + ", stockInfo=" + stockInfo + "]";
 	}
-	
-	
 
 }
