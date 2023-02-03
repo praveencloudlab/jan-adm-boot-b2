@@ -11,7 +11,7 @@
  Target Server Version : 80030 (8.0.30)
  File Encoding         : 65001
 
- Date: 31/01/2023 15:27:55
+ Date: 03/02/2023 16:29:19
 */
 
 SET NAMES utf8mb4;
@@ -39,11 +39,10 @@ INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (44, 56);
 INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (44, 63);
 INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (44, 66);
 INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (44, 69);
-INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (49, 48);
-INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (49, 52);
-INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (49, 164);
-INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (49, 167);
-INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (60, 59);
+INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (49, 102);
+INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (49, 452);
+INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (60, 202);
+INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (60, 252);
 INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (73, 72);
 INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (77, 76);
 INSERT INTO `brand_info` (`brand_id`, `product_id`) VALUES (81, 1);
@@ -68,9 +67,6 @@ CREATE TABLE `brands` (
 -- Records of brands
 -- ----------------------------
 BEGIN;
-INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (18, 'Samsung');
-INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (31, 'Hp');
-INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (35, 'Lenovo');
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (44, 'Dell');
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (49, 'Apple');
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (60, 'Samsung');
@@ -81,6 +77,49 @@ INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (86, 'One Plus');
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (90, 'Real Me');
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (94, 'Mi');
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (98, 'Vivo');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (102, 'Bose');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (106, 'LP');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (110, 'Levis');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (114, 'W for Women');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (118, 'Zara');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (122, 'Gap');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (126, 'Biba');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (130, 'Boss');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (134, 'Calvin Klein');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (138, 'Reebok');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (142, 'Tommy Hilfiger');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (146, 'Redmi');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (150, 'Oppo');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (154, 'iQOO');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (158, 'Nokia');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (162, 'Xiaomi');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (164, 'Lava');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (168, 'Motorola');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (172, 'Google');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (174, 'Micromax');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (178, 'POCO');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (182, 'LG');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (186, 'Fastrack');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (190, 'Casio');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (194, 'TIMEX');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (198, 'Titan');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (202, 'Fossil');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (206, 'LOUIS DEVIN');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (300, 'TIMEWEAR');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (304, 'Sonata');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (308, 'Tommy Hilfiger');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (312, 'NAVIFORCE');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (316, 'Citizen');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (320, 'ASUS');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (324, 'Acer');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (328, 'MSI');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (332, 'Microsoft');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (336, 'ZEBRONICS');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (340, 'boAt');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (344, 'Marshall');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (348, 'Infinity');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (352, 'Yamaha');
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES (356, 'Logitech');
 COMMIT;
 
 -- ----------------------------
@@ -140,6 +179,8 @@ INSERT INTO `categories` (`category_id`, `category_title`) VALUES (1, 'Speakers'
 INSERT INTO `categories` (`category_id`, `category_title`) VALUES (45, 'Laptops');
 INSERT INTO `categories` (`category_id`, `category_title`) VALUES (53, 'Mobiles');
 INSERT INTO `categories` (`category_id`, `category_title`) VALUES (82, 'Televisions');
+INSERT INTO `categories` (`category_id`, `category_title`) VALUES (86, 'Watches');
+INSERT INTO `categories` (`category_id`, `category_title`) VALUES (90, 'Cloths');
 COMMIT;
 
 -- ----------------------------
@@ -155,6 +196,91 @@ CREATE TABLE `categories_seq` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `categories_seq` (`next_val`) VALUES (51);
+COMMIT;
+
+-- ----------------------------
+-- Table structure for category_brands
+-- ----------------------------
+DROP TABLE IF EXISTS `category_brands`;
+CREATE TABLE `category_brands` (
+  `category_id` int NOT NULL,
+  `brand_id` int NOT NULL,
+  KEY `FKp4lugeihfafmlwemfs2rkey88` (`brand_id`),
+  KEY `FK1unukst53ykwjwo52uh5ovi09` (`category_id`),
+  CONSTRAINT `FK1unukst53ykwjwo52uh5ovi09` FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`),
+  CONSTRAINT `FKp4lugeihfafmlwemfs2rkey88` FOREIGN KEY (`brand_id`) REFERENCES `brands` (`brand_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- ----------------------------
+-- Records of category_brands
+-- ----------------------------
+BEGIN;
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 44);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 49);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 60);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 73);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 77);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 81);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 320);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 324);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 328);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (45, 332);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 44);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 49);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 60);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 81);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 86);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 90);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 94);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 98);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 146);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 150);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 154);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 158);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 162);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 164);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 168);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 172);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 174);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 178);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (53, 182);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (82, 49);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (82, 60);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (82, 81);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (82, 86);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (82, 146);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (82, 174);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (82, 182);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (82, 324);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (1, 81);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (1, 102);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (1, 336);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (1, 340);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (1, 344);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (1, 348);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (1, 352);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (1, 356);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 186);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 190);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 194);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 198);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 202);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 206);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 300);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 304);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 308);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 312);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (86, 316);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 106);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 110);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 114);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 118);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 122);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 126);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 130);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 134);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 138);
+INSERT INTO `category_brands` (`category_id`, `brand_id`) VALUES (90, 142);
 COMMIT;
 
 -- ----------------------------
@@ -309,8 +435,18 @@ INSERT INTO `price_info` (`price_id`, `price`) VALUES (87, 65000);
 INSERT INTO `price_info` (`price_id`, `price`) VALUES (91, 56000);
 INSERT INTO `price_info` (`price_id`, `price`) VALUES (95, 67000);
 INSERT INTO `price_info` (`price_id`, `price`) VALUES (99, 34000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (102, 120000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (152, 145000);
 INSERT INTO `price_info` (`price_id`, `price`) VALUES (165, 45000);
 INSERT INTO `price_info` (`price_id`, `price`) VALUES (168, 38000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (202, 156000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (252, 116000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (302, 145000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (352, 145000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (353, 156000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (402, 156000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (403, 1000);
+INSERT INTO `price_info` (`price_id`, `price`) VALUES (452, 156000);
 COMMIT;
 
 -- ----------------------------
@@ -325,7 +461,7 @@ CREATE TABLE `price_info_seq` (
 -- Records of price_info_seq
 -- ----------------------------
 BEGIN;
-INSERT INTO `price_info_seq` (`next_val`) VALUES (51);
+INSERT INTO `price_info_seq` (`next_val`) VALUES (551);
 COMMIT;
 
 -- ----------------------------
@@ -367,8 +503,13 @@ INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`
 INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (89, '256 GB Green Glass', 'Real Me,GT,GT Pro', 'Real Me GT Pro', 0, 91, 92);
 INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (93, '65 inch OLED', 'MI,MI OLED,OLED,65 inch', 'MI OLED TV', 0, 95, 96);
 INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (97, '256 GB Blue', 'Vivo', 'Vivo 5.7 OLED ', 0, 99, 100);
+INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (102, 'Desc1', 'K1,K2,K3', 'Iphone 13 Blue-v1', 0, 102, 102);
+INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (152, '256 GB', 'Apple,Ipad,pro', 'Ipad Pro 11 Gen', 0, 152, 152);
 INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (164, 'Iphone12 256 GB Red Color', 'Apple,Iphone12,Iphone', 'Iphone12', 0, 165, 166);
 INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (167, 'Iphone 10 4.7 inches screen ', 'Iphone,Apple,Iphone10', 'Iphone 10', 0, 168, 169);
+INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (202, '512 GB', 'Samung, Ultra, S23', 'Samsung S23 Ultra', 0, 202, 202);
+INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (252, '256 GB', 'Sam,Samung, Ultra, S23', 'Samsung S22 Ultra', 0, 252, 252);
+INSERT INTO `products` (`product_id`, `description`, `keywords`, `product_title`, `rating`, `price_id`, `stock_id`) VALUES (452, '256 GB, Blue', 'Iphone,Pro,max,Iphone Pro max', 'Iphone 14 Pro Max', 0, 452, 452);
 COMMIT;
 
 -- ----------------------------
@@ -383,7 +524,7 @@ CREATE TABLE `products_seq` (
 -- Records of products_seq
 -- ----------------------------
 BEGIN;
-INSERT INTO `products_seq` (`next_val`) VALUES (51);
+INSERT INTO `products_seq` (`next_val`) VALUES (551);
 COMMIT;
 
 -- ----------------------------
@@ -426,8 +567,18 @@ INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (88, 20);
 INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (92, 16);
 INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (96, 0);
 INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (100, 13);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (102, 65);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (152, 12);
 INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (166, 76);
 INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (169, 18);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (202, 35);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (252, 11);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (302, 46);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (352, 46);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (353, 23);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (402, 23);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (403, 65);
+INSERT INTO `stock_info` (`stock_id`, `stock`) VALUES (452, 87);
 COMMIT;
 
 -- ----------------------------
@@ -442,7 +593,7 @@ CREATE TABLE `stock_info_seq` (
 -- Records of stock_info_seq
 -- ----------------------------
 BEGIN;
-INSERT INTO `stock_info_seq` (`next_val`) VALUES (51);
+INSERT INTO `stock_info_seq` (`next_val`) VALUES (551);
 COMMIT;
 
 -- ----------------------------
