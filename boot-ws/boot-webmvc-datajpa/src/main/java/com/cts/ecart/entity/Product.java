@@ -18,6 +18,7 @@ public class Product {
 	private String productTitle;
 	private String keywords;
 	private String description;
+	private double rating;
 
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "priceId")
@@ -25,6 +26,16 @@ public class Product {
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "stockId")
 	private StockInfo stockInfo;
+	
+	
+
+	public double getRating() {
+		return rating;
+	}
+
+	public void setRating(double rating) {
+		this.rating = rating;
+	}
 
 	public String getKeywords() {
 		return keywords;

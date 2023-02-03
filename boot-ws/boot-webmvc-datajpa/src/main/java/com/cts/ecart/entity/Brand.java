@@ -3,6 +3,8 @@ package com.cts.ecart.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.annotations.DynamicUpdate;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -14,13 +16,13 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.OneToMany;
 
 @Entity(name = "brands")
+@DynamicUpdate
 public class Brand {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private int brandId;
 	private String brandTitle;
-	private int categoryId;
 	
 	
 	@OneToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
@@ -33,11 +35,11 @@ public class Brand {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Brand(int brandId, String brandTitle, int categoryId) {
+	public Brand(int brandId, String brandTitle) {
 		super();
 		this.brandId = brandId;
 		this.brandTitle = brandTitle;
-		this.categoryId = categoryId;
+		
 	}
 
 	
@@ -66,19 +68,12 @@ public class Brand {
 		this.brandTitle = brandTitle;
 	}
 
-	public int getCategoryId() {
-		return categoryId;
-	}
-
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
-	}
-
 	@Override
 	public String toString() {
-		return "Brand [brandId=" + brandId + ", brandTitle=" + brandTitle + ", categoryId=" + categoryId + ", prods="
-				+ prods + "]";
+		return "Brand [brandId=" + brandId + ", brandTitle=" + brandTitle + ", prods=" + prods + "]";
 	}
+
+	
 
 	
 }
